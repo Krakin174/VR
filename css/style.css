@@ -1,0 +1,393 @@
+.body__wrapper {
+    width: 1440px;
+    height: 4360px;
+}
+
+body {
+    background-color: #111827;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.header--fixed {
+    width: 100%;
+    position: fixed;
+    top: 5px;
+    left: 0;
+    background-color: #111827;
+    border: 1px solid #15264d;
+    animation: show 1s ease-in-out;
+    z-index: 10;
+}
+
+.progressbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background-color: #FFFFFF;
+    transform-origin: left center;
+    transform: scaleX(0);
+    transition: transform 0.2s ease;
+    z-index: 10;
+}
+
+/* -------------------------------Шапка---------------------------------- */
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 118px;
+}
+
+.header__logo-zone {
+    display: flex;
+    align-items: center;
+    margin-left: 135px;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.header__logo-zone:focus,
+.header__logo-zone:hover {
+    transform: scale(1.2);
+}
+
+.header__logo-zone div {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: 'rubikmedium', Arial, sans-serif;
+    margin-left: 7.75px;
+}
+
+.header__logo-zone img {
+    width: 34.25px;
+    height: 34.25px;
+}
+
+.header__center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 656px;
+    margin-right: 135px;
+}
+
+.header__text {
+    font-size: 14px;
+    font-family: 'dm_sansmedium', Arial, sans-serif;
+    color: #F9FAFB;
+    position: relative;
+}
+
+
+
+.header__btn {
+    width: 132px;
+    height: 42px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'dm_sansmedium', Arial, sans-serif;
+    color: #F9FAFB;
+    background-color: #2563EB;
+    transition: background-color 0.5s ease;
+}
+
+.header__btn:hover,
+.header__btn:focus {
+    background-color: #7f55ed;
+}
+
+
+/* -----------------Чел с мувами---------------- */
+
+.home {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home__title-wrapper {
+    margin-top: 162px;
+}
+
+.home__title {
+    background: linear-gradient(90deg, rgba(37, 154, 235, 1) 0%, rgba(217, 70, 239, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 58px;
+    font-family: 'dm_sansbold', Arial, sans-serif;
+    margin-left: 132px;
+}
+
+.home__title-first {
+    margin-bottom: 20px;
+}
+
+.home__text {
+    margin-top: 29px;
+    color: #E5E7EB;
+    font-size: 15px;
+    font-family: 'dm_sansmedium', Arial, sans-serif;
+    margin-left: 136px;
+    margin-bottom: 31px;
+}
+
+.home__btn-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.home__btn {
+    width: 135px;
+    height: 61px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: 'dm_sansmedium', Arial, sans-serif;
+    color: #F9FAFB;
+    background-color: #2563EB;
+    transition: all 0.5s ease;
+    margin-left: 132px;
+}
+
+.home__btn:hover,
+.home__btn:focus {
+    background-color: #7f55ed;
+}
+
+.home__btn-wrapper a {
+    display: flex;
+    align-items: center;
+}
+
+.home__btn-wrapper a img {
+    color: #FFFFFF;
+    margin-left: 29px;
+}
+
+.home__btn-wrapper a p {
+    color: #F9FAFB;
+    margin-left: 20px;
+    font-size: 16px;
+    font-family: 'dm_sansmedium', Arial, sans-serif;
+}
+
+.home__btn-wrapper a {
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.home__btn-wrapper a:hover,
+.home__btn-wrapper a:focus {
+    transform: scale(1.1);
+}
+
+.home__img {
+    margin-top: -40px;
+    transform: scale(1);
+    transition: transform 0.5s ease;
+}
+
+.home__img:hover,
+.home__img:focus {
+    transform: scale(1.05);
+}
+
+
+/* -----------------Чел в AR---------------- */
+
+#about {
+    margin-top: 120px;
+    margin-left: 95px;
+}
+
+.about-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.about__text-wrapper {
+    margin-left: 35px;
+}
+
+.about__title {
+    font-size: 42px;
+    font-family: 'dm_sansbold', Arial, sans-serif;
+    color: #FFFFFF;
+    line-height: 52px;
+}
+
+.about__text {
+    font-size: 16px;
+    font-family: 'dm_sansregular', Arial, sans-serif;
+    color: #FFFFFF;
+    line-height: 26px;
+    margin-top: 30px;
+}
+
+.about__btn {
+    width: 99px;
+    height: 31px;
+    border-radius: 4px;
+    margin-top: 30px;
+    font-size: 14px;
+    font-family: 'dm_sansregular', Arial, sans-serif;
+    color: #FFFFFF;
+    background-color: #2563EB;
+    transition: background-color 0.5s ease;
+}
+
+.about__btn:hover,
+.about__btn:focus {
+    background-color: #7f55ed;
+}
+
+.about__img {
+    transform: scale(1);
+    transition: transform 0.5s ease;
+}
+
+.about__img:hover,
+.about__img:focus {
+    transform: scale(1.05);
+}
+
+/* -----------------Чел с планетой---------------- */
+
+#pricing {
+    margin-top: 57px;
+    margin-left: 135px;
+}
+
+.pricing-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.pricing__text-wrapper {
+    margin-right: 31px;
+}
+/* ------------------------Подвал---------------------------- */
+
+/* ---------Информация--------- */
+
+#info {
+    margin-top: 98px;
+    display: flex;
+    justify-content: center;
+}
+
+.info-wrapper {
+    width: 1171px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info__first {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 217px;
+}
+
+.info__first__logo {
+    display: flex;
+    align-items: center;
+}
+
+.info__first__logo div {
+    margin-left: 7.75px;
+    font-size: 20px;
+    font-family: 'rubikmedium', Arial, sans-serif;
+    color: #FFFFFF;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+}
+
+.location img {
+    width: 24px;
+    height: 24px;
+}
+
+.location p {
+    margin-left: 7px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: 'dm_sansregular', Arial, sans-serif;
+}
+
+.info__first-img {
+    width: 173.8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info__second {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 387px;
+}
+
+.second__one {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+}
+
+.second__one__title {
+    font-size: 18px;
+    font-family: 'dm_sansmedium', Arial, sans-serif;
+    color: #FFFFFF;
+}
+
+.second__one p {
+    font-size: 18px;
+    font-family: 'dm_sansregular', Arial, sans-serif;
+    color: #FFFFFF;
+}
+
+
+
+.line {
+    width: 100%;
+    height: 1px;
+    border: 0.5px solid #969696;
+    margin-top: 32.8px;
+}
+
+/* ---------Все права--------- */
+
+#rights {
+    margin-top: 33px;
+    display: flex;
+    justify-content: center;
+}
+
+.rights-wrapper {
+    width: 1140px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rights__main {
+    font-size: 14px;
+    font-family: 'rubikregular', Arial, sans-serif;
+    color: #FFFFFF;
+}
+
+.rights__text {
+    display: flex;
+    justify-content: space-between;
+    width: 248px;
+    font-size: 14px;
+    font-family: 'dm_sansregular', Arial, sans-serif;
+    color: #FFFFFF;
+}
